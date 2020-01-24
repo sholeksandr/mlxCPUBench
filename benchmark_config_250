@@ -1,0 +1,505 @@
+no cli default prefix-modes enable
+
+interface ethernet 1/23 speed 10G force
+interface ethernet 1/23 switchport mode trunk
+
+protocol bgp
+ip routing
+router bgp 10
+
+vlan 10-250
+interface vlan 10-250
+
+interface vlan 10 ip address 10.0.1.1/24 primary
+interface vlan 11 ip address 10.0.2.1/24 primary
+interface vlan 12 ip address 10.0.3.1/24 primary
+interface vlan 13 ip address 10.0.4.1/24 primary
+interface vlan 14 ip address 10.0.5.1/24 primary
+interface vlan 15 ip address 10.0.6.1/24 primary
+interface vlan 16 ip address 10.0.7.1/24 primary
+interface vlan 17 ip address 10.0.8.1/24 primary
+interface vlan 18 ip address 10.0.9.1/24 primary
+interface vlan 19 ip address 10.0.10.1/24 primary
+interface vlan 20 ip address 10.0.11.1/24 primary
+interface vlan 21 ip address 10.0.12.1/24 primary
+interface vlan 22 ip address 10.0.13.1/24 primary
+interface vlan 23 ip address 10.0.14.1/24 primary
+interface vlan 24 ip address 10.0.15.1/24 primary
+interface vlan 25 ip address 10.0.16.1/24 primary
+interface vlan 26 ip address 10.0.17.1/24 primary
+interface vlan 27 ip address 10.0.18.1/24 primary
+interface vlan 28 ip address 10.0.19.1/24 primary
+interface vlan 29 ip address 10.0.20.1/24 primary
+interface vlan 30 ip address 10.0.21.1/24 primary
+interface vlan 31 ip address 10.0.22.1/24 primary
+interface vlan 32 ip address 10.0.23.1/24 primary
+interface vlan 33 ip address 10.0.24.1/24 primary
+interface vlan 34 ip address 10.0.25.1/24 primary
+interface vlan 35 ip address 10.0.26.1/24 primary
+interface vlan 36 ip address 10.0.27.1/24 primary
+interface vlan 37 ip address 10.0.28.1/24 primary
+interface vlan 38 ip address 10.0.29.1/24 primary
+interface vlan 39 ip address 10.0.30.1/24 primary
+interface vlan 40 ip address 10.0.31.1/24 primary
+interface vlan 41 ip address 10.0.32.1/24 primary
+interface vlan 42 ip address 10.0.33.1/24 primary
+interface vlan 43 ip address 10.0.34.1/24 primary
+interface vlan 44 ip address 10.0.35.1/24 primary
+interface vlan 45 ip address 10.0.36.1/24 primary
+interface vlan 46 ip address 10.0.37.1/24 primary
+interface vlan 47 ip address 10.0.38.1/24 primary
+interface vlan 48 ip address 10.0.39.1/24 primary
+interface vlan 49 ip address 10.0.40.1/24 primary
+interface vlan 50 ip address 10.0.41.1/24 primary
+interface vlan 51 ip address 10.0.42.1/24 primary
+interface vlan 52 ip address 10.0.43.1/24 primary
+interface vlan 53 ip address 10.0.44.1/24 primary
+interface vlan 54 ip address 10.0.45.1/24 primary
+interface vlan 55 ip address 10.0.46.1/24 primary
+interface vlan 56 ip address 10.0.47.1/24 primary
+interface vlan 57 ip address 10.0.48.1/24 primary
+interface vlan 58 ip address 10.0.49.1/24 primary
+interface vlan 59 ip address 10.0.50.1/24 primary
+interface vlan 60 ip address 10.0.51.1/24 primary
+interface vlan 61 ip address 10.0.52.1/24 primary
+interface vlan 62 ip address 10.0.53.1/24 primary
+interface vlan 63 ip address 10.0.54.1/24 primary
+interface vlan 64 ip address 10.0.55.1/24 primary
+interface vlan 65 ip address 10.0.56.1/24 primary
+interface vlan 66 ip address 10.0.57.1/24 primary
+interface vlan 67 ip address 10.0.58.1/24 primary
+interface vlan 68 ip address 10.0.59.1/24 primary
+interface vlan 69 ip address 10.0.60.1/24 primary
+interface vlan 70 ip address 10.0.61.1/24 primary
+interface vlan 71 ip address 10.0.62.1/24 primary
+interface vlan 72 ip address 10.0.63.1/24 primary
+interface vlan 73 ip address 10.0.64.1/24 primary
+interface vlan 74 ip address 10.0.65.1/24 primary
+interface vlan 75 ip address 10.0.66.1/24 primary
+interface vlan 76 ip address 10.0.67.1/24 primary
+interface vlan 77 ip address 10.0.68.1/24 primary
+interface vlan 78 ip address 10.0.69.1/24 primary
+interface vlan 79 ip address 10.0.70.1/24 primary
+interface vlan 80 ip address 10.0.71.1/24 primary
+interface vlan 81 ip address 10.0.72.1/24 primary
+interface vlan 82 ip address 10.0.73.1/24 primary
+interface vlan 83 ip address 10.0.74.1/24 primary
+interface vlan 84 ip address 10.0.75.1/24 primary
+interface vlan 85 ip address 10.0.76.1/24 primary
+interface vlan 86 ip address 10.0.77.1/24 primary
+interface vlan 87 ip address 10.0.78.1/24 primary
+interface vlan 88 ip address 10.0.79.1/24 primary
+interface vlan 89 ip address 10.0.80.1/24 primary
+interface vlan 90 ip address 10.0.81.1/24 primary
+interface vlan 91 ip address 10.0.82.1/24 primary
+interface vlan 92 ip address 10.0.83.1/24 primary
+interface vlan 93 ip address 10.0.84.1/24 primary
+interface vlan 94 ip address 10.0.85.1/24 primary
+interface vlan 95 ip address 10.0.86.1/24 primary
+interface vlan 96 ip address 10.0.87.1/24 primary
+interface vlan 97 ip address 10.0.88.1/24 primary
+interface vlan 98 ip address 10.0.89.1/24 primary
+interface vlan 99 ip address 10.0.90.1/24 primary
+interface vlan 100 ip address 10.0.91.1/24 primary
+interface vlan 101 ip address 10.0.92.1/24 primary
+interface vlan 102 ip address 10.0.93.1/24 primary
+interface vlan 103 ip address 10.0.94.1/24 primary
+interface vlan 104 ip address 10.0.95.1/24 primary
+interface vlan 105 ip address 10.0.96.1/24 primary
+interface vlan 106 ip address 10.0.97.1/24 primary
+interface vlan 107 ip address 10.0.98.1/24 primary
+interface vlan 108 ip address 10.0.99.1/24 primary
+interface vlan 109 ip address 10.0.100.1/24 primary
+interface vlan 110 ip address 10.0.101.1/24 primary
+interface vlan 111 ip address 10.0.102.1/24 primary
+interface vlan 112 ip address 10.0.103.1/24 primary
+interface vlan 113 ip address 10.0.104.1/24 primary
+interface vlan 114 ip address 10.0.105.1/24 primary
+interface vlan 115 ip address 10.0.106.1/24 primary
+interface vlan 116 ip address 10.0.107.1/24 primary
+interface vlan 117 ip address 10.0.108.1/24 primary
+interface vlan 118 ip address 10.0.109.1/24 primary
+interface vlan 119 ip address 10.0.110.1/24 primary
+interface vlan 120 ip address 10.0.111.1/24 primary
+interface vlan 121 ip address 10.0.112.1/24 primary
+interface vlan 122 ip address 10.0.113.1/24 primary
+interface vlan 123 ip address 10.0.114.1/24 primary
+interface vlan 124 ip address 10.0.115.1/24 primary
+interface vlan 125 ip address 10.0.116.1/24 primary
+interface vlan 126 ip address 10.0.117.1/24 primary
+interface vlan 127 ip address 10.0.118.1/24 primary
+interface vlan 128 ip address 10.0.119.1/24 primary
+interface vlan 129 ip address 10.0.120.1/24 primary
+interface vlan 130 ip address 10.0.121.1/24 primary
+interface vlan 131 ip address 10.0.122.1/24 primary
+interface vlan 132 ip address 10.0.123.1/24 primary
+interface vlan 133 ip address 10.0.124.1/24 primary
+interface vlan 134 ip address 10.0.125.1/24 primary
+interface vlan 135 ip address 10.0.126.1/24 primary
+interface vlan 136 ip address 10.0.127.1/24 primary
+interface vlan 137 ip address 10.0.128.1/24 primary
+interface vlan 138 ip address 10.0.129.1/24 primary
+interface vlan 139 ip address 10.0.130.1/24 primary
+interface vlan 140 ip address 10.0.131.1/24 primary
+interface vlan 141 ip address 10.0.132.1/24 primary
+interface vlan 142 ip address 10.0.133.1/24 primary
+interface vlan 143 ip address 10.0.134.1/24 primary
+interface vlan 144 ip address 10.0.135.1/24 primary
+interface vlan 145 ip address 10.0.136.1/24 primary
+interface vlan 146 ip address 10.0.137.1/24 primary
+interface vlan 147 ip address 10.0.138.1/24 primary
+interface vlan 148 ip address 10.0.139.1/24 primary
+interface vlan 149 ip address 10.0.140.1/24 primary
+interface vlan 150 ip address 10.0.141.1/24 primary
+interface vlan 151 ip address 10.0.142.1/24 primary
+interface vlan 152 ip address 10.0.143.1/24 primary
+interface vlan 153 ip address 10.0.144.1/24 primary
+interface vlan 154 ip address 10.0.145.1/24 primary
+interface vlan 155 ip address 10.0.146.1/24 primary
+interface vlan 156 ip address 10.0.147.1/24 primary
+interface vlan 157 ip address 10.0.148.1/24 primary
+interface vlan 158 ip address 10.0.149.1/24 primary
+interface vlan 159 ip address 10.0.150.1/24 primary
+interface vlan 160 ip address 10.0.151.1/24 primary
+interface vlan 161 ip address 10.0.152.1/24 primary
+interface vlan 162 ip address 10.0.153.1/24 primary
+interface vlan 163 ip address 10.0.154.1/24 primary
+interface vlan 164 ip address 10.0.155.1/24 primary
+interface vlan 165 ip address 10.0.156.1/24 primary
+interface vlan 166 ip address 10.0.157.1/24 primary
+interface vlan 167 ip address 10.0.158.1/24 primary
+interface vlan 168 ip address 10.0.159.1/24 primary
+interface vlan 169 ip address 10.0.160.1/24 primary
+interface vlan 170 ip address 10.0.161.1/24 primary
+interface vlan 171 ip address 10.0.162.1/24 primary
+interface vlan 172 ip address 10.0.163.1/24 primary
+interface vlan 173 ip address 10.0.164.1/24 primary
+interface vlan 174 ip address 10.0.165.1/24 primary
+interface vlan 175 ip address 10.0.166.1/24 primary
+interface vlan 176 ip address 10.0.167.1/24 primary
+interface vlan 177 ip address 10.0.168.1/24 primary
+interface vlan 178 ip address 10.0.169.1/24 primary
+interface vlan 179 ip address 10.0.170.1/24 primary
+interface vlan 180 ip address 10.0.171.1/24 primary
+interface vlan 181 ip address 10.0.172.1/24 primary
+interface vlan 182 ip address 10.0.173.1/24 primary
+interface vlan 183 ip address 10.0.174.1/24 primary
+interface vlan 184 ip address 10.0.175.1/24 primary
+interface vlan 185 ip address 10.0.176.1/24 primary
+interface vlan 186 ip address 10.0.177.1/24 primary
+interface vlan 187 ip address 10.0.178.1/24 primary
+interface vlan 188 ip address 10.0.179.1/24 primary
+interface vlan 189 ip address 10.0.180.1/24 primary
+interface vlan 190 ip address 10.0.181.1/24 primary
+interface vlan 191 ip address 10.0.182.1/24 primary
+interface vlan 192 ip address 10.0.183.1/24 primary
+interface vlan 193 ip address 10.0.184.1/24 primary
+interface vlan 194 ip address 10.0.185.1/24 primary
+interface vlan 195 ip address 10.0.186.1/24 primary
+interface vlan 196 ip address 10.0.187.1/24 primary
+interface vlan 197 ip address 10.0.188.1/24 primary
+interface vlan 198 ip address 10.0.189.1/24 primary
+interface vlan 199 ip address 10.0.190.1/24 primary
+interface vlan 200 ip address 10.0.191.1/24 primary
+interface vlan 201 ip address 10.0.192.1/24 primary
+interface vlan 202 ip address 10.0.193.1/24 primary
+interface vlan 203 ip address 10.0.194.1/24 primary
+interface vlan 204 ip address 10.0.195.1/24 primary
+interface vlan 205 ip address 10.0.196.1/24 primary
+interface vlan 206 ip address 10.0.197.1/24 primary
+interface vlan 207 ip address 10.0.198.1/24 primary
+interface vlan 208 ip address 10.0.199.1/24 primary
+interface vlan 209 ip address 10.0.200.1/24 primary
+interface vlan 210 ip address 10.0.201.1/24 primary
+interface vlan 211 ip address 10.0.202.1/24 primary
+interface vlan 212 ip address 10.0.203.1/24 primary
+interface vlan 213 ip address 10.0.204.1/24 primary
+interface vlan 214 ip address 10.0.205.1/24 primary
+interface vlan 215 ip address 10.0.206.1/24 primary
+interface vlan 216 ip address 10.0.207.1/24 primary
+interface vlan 217 ip address 10.0.208.1/24 primary
+interface vlan 218 ip address 10.0.209.1/24 primary
+interface vlan 219 ip address 10.0.210.1/24 primary
+interface vlan 220 ip address 10.0.211.1/24 primary
+interface vlan 221 ip address 10.0.212.1/24 primary
+interface vlan 222 ip address 10.0.213.1/24 primary
+interface vlan 223 ip address 10.0.214.1/24 primary
+interface vlan 224 ip address 10.0.215.1/24 primary
+interface vlan 225 ip address 10.0.216.1/24 primary
+interface vlan 226 ip address 10.0.217.1/24 primary
+interface vlan 227 ip address 10.0.218.1/24 primary
+interface vlan 228 ip address 10.0.219.1/24 primary
+interface vlan 229 ip address 10.0.220.1/24 primary
+interface vlan 230 ip address 10.0.221.1/24 primary
+interface vlan 231 ip address 10.0.222.1/24 primary
+interface vlan 232 ip address 10.0.223.1/24 primary
+interface vlan 233 ip address 10.0.224.1/24 primary
+interface vlan 234 ip address 10.0.225.1/24 primary
+interface vlan 235 ip address 10.0.226.1/24 primary
+interface vlan 236 ip address 10.0.227.1/24 primary
+interface vlan 237 ip address 10.0.228.1/24 primary
+interface vlan 238 ip address 10.0.229.1/24 primary
+interface vlan 239 ip address 10.0.230.1/24 primary
+interface vlan 240 ip address 10.0.231.1/24 primary
+interface vlan 241 ip address 10.0.232.1/24 primary
+interface vlan 242 ip address 10.0.233.1/24 primary
+interface vlan 243 ip address 10.0.234.1/24 primary
+interface vlan 244 ip address 10.0.235.1/24 primary
+interface vlan 245 ip address 10.0.236.1/24 primary
+interface vlan 246 ip address 10.0.237.1/24 primary
+interface vlan 247 ip address 10.0.238.1/24 primary
+interface vlan 248 ip address 10.0.239.1/24 primary
+interface vlan 249 ip address 10.0.240.1/24 primary
+interface vlan 250 ip address 10.0.241.1/24 primary
+
+router bgp 10 vrf default neighbor 10.0.1.2 remote-as 110
+router bgp 10 vrf default neighbor 10.0.2.2 remote-as 111
+router bgp 10 vrf default neighbor 10.0.3.2 remote-as 112
+router bgp 10 vrf default neighbor 10.0.4.2 remote-as 113
+router bgp 10 vrf default neighbor 10.0.5.2 remote-as 114
+router bgp 10 vrf default neighbor 10.0.6.2 remote-as 115
+router bgp 10 vrf default neighbor 10.0.7.2 remote-as 116
+router bgp 10 vrf default neighbor 10.0.8.2 remote-as 117
+router bgp 10 vrf default neighbor 10.0.9.2 remote-as 118
+router bgp 10 vrf default neighbor 10.0.10.2 remote-as 119
+router bgp 10 vrf default neighbor 10.0.11.2 remote-as 120
+router bgp 10 vrf default neighbor 10.0.12.2 remote-as 121
+router bgp 10 vrf default neighbor 10.0.13.2 remote-as 122
+router bgp 10 vrf default neighbor 10.0.14.2 remote-as 123
+router bgp 10 vrf default neighbor 10.0.15.2 remote-as 124
+router bgp 10 vrf default neighbor 10.0.16.2 remote-as 125
+router bgp 10 vrf default neighbor 10.0.17.2 remote-as 126
+router bgp 10 vrf default neighbor 10.0.18.2 remote-as 127
+router bgp 10 vrf default neighbor 10.0.19.2 remote-as 128
+router bgp 10 vrf default neighbor 10.0.20.2 remote-as 129
+router bgp 10 vrf default neighbor 10.0.21.2 remote-as 130
+router bgp 10 vrf default neighbor 10.0.22.2 remote-as 131
+router bgp 10 vrf default neighbor 10.0.23.2 remote-as 132
+router bgp 10 vrf default neighbor 10.0.24.2 remote-as 133
+router bgp 10 vrf default neighbor 10.0.25.2 remote-as 134
+router bgp 10 vrf default neighbor 10.0.26.2 remote-as 135
+router bgp 10 vrf default neighbor 10.0.27.2 remote-as 136
+router bgp 10 vrf default neighbor 10.0.28.2 remote-as 137
+router bgp 10 vrf default neighbor 10.0.29.2 remote-as 138
+router bgp 10 vrf default neighbor 10.0.30.2 remote-as 139
+router bgp 10 vrf default neighbor 10.0.31.2 remote-as 140
+router bgp 10 vrf default neighbor 10.0.32.2 remote-as 141
+router bgp 10 vrf default neighbor 10.0.33.2 remote-as 142
+router bgp 10 vrf default neighbor 10.0.34.2 remote-as 143
+router bgp 10 vrf default neighbor 10.0.35.2 remote-as 144
+router bgp 10 vrf default neighbor 10.0.36.2 remote-as 145
+router bgp 10 vrf default neighbor 10.0.37.2 remote-as 146
+router bgp 10 vrf default neighbor 10.0.38.2 remote-as 147
+router bgp 10 vrf default neighbor 10.0.39.2 remote-as 148
+router bgp 10 vrf default neighbor 10.0.40.2 remote-as 149
+router bgp 10 vrf default neighbor 10.0.41.2 remote-as 150
+router bgp 10 vrf default neighbor 10.0.42.2 remote-as 151
+router bgp 10 vrf default neighbor 10.0.43.2 remote-as 152
+router bgp 10 vrf default neighbor 10.0.44.2 remote-as 153
+router bgp 10 vrf default neighbor 10.0.45.2 remote-as 154
+router bgp 10 vrf default neighbor 10.0.46.2 remote-as 155
+router bgp 10 vrf default neighbor 10.0.47.2 remote-as 156
+router bgp 10 vrf default neighbor 10.0.48.2 remote-as 157
+router bgp 10 vrf default neighbor 10.0.49.2 remote-as 158
+router bgp 10 vrf default neighbor 10.0.50.2 remote-as 159
+router bgp 10 vrf default neighbor 10.0.51.2 remote-as 160
+router bgp 10 vrf default neighbor 10.0.52.2 remote-as 161
+router bgp 10 vrf default neighbor 10.0.53.2 remote-as 162
+router bgp 10 vrf default neighbor 10.0.54.2 remote-as 163
+router bgp 10 vrf default neighbor 10.0.55.2 remote-as 164
+router bgp 10 vrf default neighbor 10.0.56.2 remote-as 165
+router bgp 10 vrf default neighbor 10.0.57.2 remote-as 166
+router bgp 10 vrf default neighbor 10.0.58.2 remote-as 167
+router bgp 10 vrf default neighbor 10.0.59.2 remote-as 168
+router bgp 10 vrf default neighbor 10.0.60.2 remote-as 169
+router bgp 10 vrf default neighbor 10.0.61.2 remote-as 170
+router bgp 10 vrf default neighbor 10.0.62.2 remote-as 171
+router bgp 10 vrf default neighbor 10.0.63.2 remote-as 172
+router bgp 10 vrf default neighbor 10.0.64.2 remote-as 173
+router bgp 10 vrf default neighbor 10.0.65.2 remote-as 174
+router bgp 10 vrf default neighbor 10.0.66.2 remote-as 175
+router bgp 10 vrf default neighbor 10.0.67.2 remote-as 176
+router bgp 10 vrf default neighbor 10.0.68.2 remote-as 177
+router bgp 10 vrf default neighbor 10.0.69.2 remote-as 178
+router bgp 10 vrf default neighbor 10.0.70.2 remote-as 179
+router bgp 10 vrf default neighbor 10.0.71.2 remote-as 180
+router bgp 10 vrf default neighbor 10.0.72.2 remote-as 181
+router bgp 10 vrf default neighbor 10.0.73.2 remote-as 182
+router bgp 10 vrf default neighbor 10.0.74.2 remote-as 183
+router bgp 10 vrf default neighbor 10.0.75.2 remote-as 184
+router bgp 10 vrf default neighbor 10.0.76.2 remote-as 185
+router bgp 10 vrf default neighbor 10.0.77.2 remote-as 186
+router bgp 10 vrf default neighbor 10.0.78.2 remote-as 187
+router bgp 10 vrf default neighbor 10.0.79.2 remote-as 188
+router bgp 10 vrf default neighbor 10.0.80.2 remote-as 189
+router bgp 10 vrf default neighbor 10.0.81.2 remote-as 190
+router bgp 10 vrf default neighbor 10.0.82.2 remote-as 191
+router bgp 10 vrf default neighbor 10.0.83.2 remote-as 192
+router bgp 10 vrf default neighbor 10.0.84.2 remote-as 193
+router bgp 10 vrf default neighbor 10.0.85.2 remote-as 194
+router bgp 10 vrf default neighbor 10.0.86.2 remote-as 195
+router bgp 10 vrf default neighbor 10.0.87.2 remote-as 196
+router bgp 10 vrf default neighbor 10.0.88.2 remote-as 197
+router bgp 10 vrf default neighbor 10.0.89.2 remote-as 198
+router bgp 10 vrf default neighbor 10.0.90.2 remote-as 199
+router bgp 10 vrf default neighbor 10.0.91.2 remote-as 200
+router bgp 10 vrf default neighbor 10.0.92.2 remote-as 201
+router bgp 10 vrf default neighbor 10.0.93.2 remote-as 202
+router bgp 10 vrf default neighbor 10.0.94.2 remote-as 203
+router bgp 10 vrf default neighbor 10.0.95.2 remote-as 204
+router bgp 10 vrf default neighbor 10.0.96.2 remote-as 205
+router bgp 10 vrf default neighbor 10.0.97.2 remote-as 206
+router bgp 10 vrf default neighbor 10.0.98.2 remote-as 207
+router bgp 10 vrf default neighbor 10.0.99.2 remote-as 208
+router bgp 10 vrf default neighbor 10.0.100.2 remote-as 209
+router bgp 10 vrf default neighbor 10.0.101.2 remote-as 210
+router bgp 10 vrf default neighbor 10.0.102.2 remote-as 211
+router bgp 10 vrf default neighbor 10.0.103.2 remote-as 212
+router bgp 10 vrf default neighbor 10.0.104.2 remote-as 213
+router bgp 10 vrf default neighbor 10.0.105.2 remote-as 214
+router bgp 10 vrf default neighbor 10.0.106.2 remote-as 215
+router bgp 10 vrf default neighbor 10.0.107.2 remote-as 216
+router bgp 10 vrf default neighbor 10.0.108.2 remote-as 217
+router bgp 10 vrf default neighbor 10.0.109.2 remote-as 218
+router bgp 10 vrf default neighbor 10.0.110.2 remote-as 219
+router bgp 10 vrf default neighbor 10.0.111.2 remote-as 220
+router bgp 10 vrf default neighbor 10.0.112.2 remote-as 221
+router bgp 10 vrf default neighbor 10.0.113.2 remote-as 222
+router bgp 10 vrf default neighbor 10.0.114.2 remote-as 223
+router bgp 10 vrf default neighbor 10.0.115.2 remote-as 224
+router bgp 10 vrf default neighbor 10.0.116.2 remote-as 225
+router bgp 10 vrf default neighbor 10.0.117.2 remote-as 226
+router bgp 10 vrf default neighbor 10.0.118.2 remote-as 227
+router bgp 10 vrf default neighbor 10.0.119.2 remote-as 228
+router bgp 10 vrf default neighbor 10.0.120.2 remote-as 229
+router bgp 10 vrf default neighbor 10.0.121.2 remote-as 230
+router bgp 10 vrf default neighbor 10.0.122.2 remote-as 231
+router bgp 10 vrf default neighbor 10.0.123.2 remote-as 232
+router bgp 10 vrf default neighbor 10.0.124.2 remote-as 233
+router bgp 10 vrf default neighbor 10.0.125.2 remote-as 234
+router bgp 10 vrf default neighbor 10.0.126.2 remote-as 235
+router bgp 10 vrf default neighbor 10.0.127.2 remote-as 236
+router bgp 10 vrf default neighbor 10.0.128.2 remote-as 237
+router bgp 10 vrf default neighbor 10.0.129.2 remote-as 238
+router bgp 10 vrf default neighbor 10.0.130.2 remote-as 239
+router bgp 10 vrf default neighbor 10.0.131.2 remote-as 240
+router bgp 10 vrf default neighbor 10.0.132.2 remote-as 241
+router bgp 10 vrf default neighbor 10.0.133.2 remote-as 242
+router bgp 10 vrf default neighbor 10.0.134.2 remote-as 243
+router bgp 10 vrf default neighbor 10.0.135.2 remote-as 244
+router bgp 10 vrf default neighbor 10.0.136.2 remote-as 245
+router bgp 10 vrf default neighbor 10.0.137.2 remote-as 246
+router bgp 10 vrf default neighbor 10.0.138.2 remote-as 247
+router bgp 10 vrf default neighbor 10.0.139.2 remote-as 248
+router bgp 10 vrf default neighbor 10.0.140.2 remote-as 249
+router bgp 10 vrf default neighbor 10.0.141.2 remote-as 250
+router bgp 10 vrf default neighbor 10.0.142.2 remote-as 251
+router bgp 10 vrf default neighbor 10.0.143.2 remote-as 252
+router bgp 10 vrf default neighbor 10.0.144.2 remote-as 253
+router bgp 10 vrf default neighbor 10.0.145.2 remote-as 254
+router bgp 10 vrf default neighbor 10.0.146.2 remote-as 255
+router bgp 10 vrf default neighbor 10.0.147.2 remote-as 256
+router bgp 10 vrf default neighbor 10.0.148.2 remote-as 257
+router bgp 10 vrf default neighbor 10.0.149.2 remote-as 258
+router bgp 10 vrf default neighbor 10.0.150.2 remote-as 259
+router bgp 10 vrf default neighbor 10.0.151.2 remote-as 260
+router bgp 10 vrf default neighbor 10.0.152.2 remote-as 261
+router bgp 10 vrf default neighbor 10.0.153.2 remote-as 262
+router bgp 10 vrf default neighbor 10.0.154.2 remote-as 263
+router bgp 10 vrf default neighbor 10.0.155.2 remote-as 264
+router bgp 10 vrf default neighbor 10.0.156.2 remote-as 265
+router bgp 10 vrf default neighbor 10.0.157.2 remote-as 266
+router bgp 10 vrf default neighbor 10.0.158.2 remote-as 267
+router bgp 10 vrf default neighbor 10.0.159.2 remote-as 268
+router bgp 10 vrf default neighbor 10.0.160.2 remote-as 269
+router bgp 10 vrf default neighbor 10.0.161.2 remote-as 270
+router bgp 10 vrf default neighbor 10.0.162.2 remote-as 271
+router bgp 10 vrf default neighbor 10.0.163.2 remote-as 272
+router bgp 10 vrf default neighbor 10.0.164.2 remote-as 273
+router bgp 10 vrf default neighbor 10.0.165.2 remote-as 274
+router bgp 10 vrf default neighbor 10.0.166.2 remote-as 275
+router bgp 10 vrf default neighbor 10.0.167.2 remote-as 276
+router bgp 10 vrf default neighbor 10.0.168.2 remote-as 277
+router bgp 10 vrf default neighbor 10.0.169.2 remote-as 278
+router bgp 10 vrf default neighbor 10.0.170.2 remote-as 279
+router bgp 10 vrf default neighbor 10.0.171.2 remote-as 280
+router bgp 10 vrf default neighbor 10.0.172.2 remote-as 281
+router bgp 10 vrf default neighbor 10.0.173.2 remote-as 282
+router bgp 10 vrf default neighbor 10.0.174.2 remote-as 283
+router bgp 10 vrf default neighbor 10.0.175.2 remote-as 284
+router bgp 10 vrf default neighbor 10.0.176.2 remote-as 285
+router bgp 10 vrf default neighbor 10.0.177.2 remote-as 286
+router bgp 10 vrf default neighbor 10.0.178.2 remote-as 287
+router bgp 10 vrf default neighbor 10.0.179.2 remote-as 288
+router bgp 10 vrf default neighbor 10.0.180.2 remote-as 289
+router bgp 10 vrf default neighbor 10.0.181.2 remote-as 290
+router bgp 10 vrf default neighbor 10.0.182.2 remote-as 291
+router bgp 10 vrf default neighbor 10.0.183.2 remote-as 292
+router bgp 10 vrf default neighbor 10.0.184.2 remote-as 293
+router bgp 10 vrf default neighbor 10.0.185.2 remote-as 294
+router bgp 10 vrf default neighbor 10.0.186.2 remote-as 295
+router bgp 10 vrf default neighbor 10.0.187.2 remote-as 296
+router bgp 10 vrf default neighbor 10.0.188.2 remote-as 297
+router bgp 10 vrf default neighbor 10.0.189.2 remote-as 298
+router bgp 10 vrf default neighbor 10.0.190.2 remote-as 299
+router bgp 10 vrf default neighbor 10.0.191.2 remote-as 300
+router bgp 10 vrf default neighbor 10.0.192.2 remote-as 301
+router bgp 10 vrf default neighbor 10.0.193.2 remote-as 302
+router bgp 10 vrf default neighbor 10.0.194.2 remote-as 303
+router bgp 10 vrf default neighbor 10.0.195.2 remote-as 304
+router bgp 10 vrf default neighbor 10.0.196.2 remote-as 305
+router bgp 10 vrf default neighbor 10.0.197.2 remote-as 306
+router bgp 10 vrf default neighbor 10.0.198.2 remote-as 307
+router bgp 10 vrf default neighbor 10.0.199.2 remote-as 308
+router bgp 10 vrf default neighbor 10.0.200.2 remote-as 309
+router bgp 10 vrf default neighbor 10.0.201.2 remote-as 310
+router bgp 10 vrf default neighbor 10.0.202.2 remote-as 311
+router bgp 10 vrf default neighbor 10.0.203.2 remote-as 312
+router bgp 10 vrf default neighbor 10.0.204.2 remote-as 313
+router bgp 10 vrf default neighbor 10.0.205.2 remote-as 314
+router bgp 10 vrf default neighbor 10.0.206.2 remote-as 315
+router bgp 10 vrf default neighbor 10.0.207.2 remote-as 316
+router bgp 10 vrf default neighbor 10.0.208.2 remote-as 317
+router bgp 10 vrf default neighbor 10.0.209.2 remote-as 318
+router bgp 10 vrf default neighbor 10.0.210.2 remote-as 319
+router bgp 10 vrf default neighbor 10.0.211.2 remote-as 320
+router bgp 10 vrf default neighbor 10.0.212.2 remote-as 321
+router bgp 10 vrf default neighbor 10.0.213.2 remote-as 322
+router bgp 10 vrf default neighbor 10.0.214.2 remote-as 323
+router bgp 10 vrf default neighbor 10.0.215.2 remote-as 324
+router bgp 10 vrf default neighbor 10.0.216.2 remote-as 325
+router bgp 10 vrf default neighbor 10.0.217.2 remote-as 326
+router bgp 10 vrf default neighbor 10.0.218.2 remote-as 327
+router bgp 10 vrf default neighbor 10.0.219.2 remote-as 328
+router bgp 10 vrf default neighbor 10.0.220.2 remote-as 329
+router bgp 10 vrf default neighbor 10.0.221.2 remote-as 330
+router bgp 10 vrf default neighbor 10.0.222.2 remote-as 331
+router bgp 10 vrf default neighbor 10.0.223.2 remote-as 332
+router bgp 10 vrf default neighbor 10.0.224.2 remote-as 333
+router bgp 10 vrf default neighbor 10.0.225.2 remote-as 334
+router bgp 10 vrf default neighbor 10.0.226.2 remote-as 335
+router bgp 10 vrf default neighbor 10.0.227.2 remote-as 336
+router bgp 10 vrf default neighbor 10.0.228.2 remote-as 337
+router bgp 10 vrf default neighbor 10.0.229.2 remote-as 338
+router bgp 10 vrf default neighbor 10.0.230.2 remote-as 339
+router bgp 10 vrf default neighbor 10.0.231.2 remote-as 340
+router bgp 10 vrf default neighbor 10.0.232.2 remote-as 341
+router bgp 10 vrf default neighbor 10.0.233.2 remote-as 342
+router bgp 10 vrf default neighbor 10.0.234.2 remote-as 343
+router bgp 10 vrf default neighbor 10.0.235.2 remote-as 344
+router bgp 10 vrf default neighbor 10.0.236.2 remote-as 345
+router bgp 10 vrf default neighbor 10.0.237.2 remote-as 346
+router bgp 10 vrf default neighbor 10.0.238.2 remote-as 347
+router bgp 10 vrf default neighbor 10.0.239.2 remote-as 348
+router bgp 10 vrf default neighbor 10.0.240.2 remote-as 349
+router bgp 10 vrf default neighbor 10.0.241.2 remote-as 350
+router bgp 10 vrf default neighbor 10.0.242.2 remote-as 351
+router bgp 10 vrf default neighbor 10.0.243.2 remote-as 352
+router bgp 10 vrf default neighbor 10.0.244.2 remote-as 353
+router bgp 10 vrf default neighbor 10.0.245.2 remote-as 354
+router bgp 10 vrf default neighbor 10.0.246.2 remote-as 355
+router bgp 10 vrf default neighbor 10.0.247.2 remote-as 356
+router bgp 10 vrf default neighbor 10.0.248.2 remote-as 357
+router bgp 10 vrf default neighbor 10.0.249.2 remote-as 358
+router bgp 10 vrf default neighbor 10.0.250.2 remote-as 359
+router bgp 10 vrf default neighbor 10.0.251.2 remote-as 360
